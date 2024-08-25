@@ -40,7 +40,6 @@ public void AppendBooks(Books b){
 }
 
 public void deleteBooks(int id){
-    // li=li.stream().filter(b->b.getId()!=id).collect(Collectors.toList());
     try {
         bookRepository.deleteById(id);
     } catch (Exception e) {
